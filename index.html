@@ -13,13 +13,15 @@
         <p>Provide your lore to receive glorious wonders</p>
         <form action="https://register-demo.freecodecamp.org" method="post">
             <fieldset>
-                <label for="">Moniker:</label>
-                <label for="">Clan:</label>
-                <label for="">Messenger Raven Destination:</label>
-                <label for="">Unsealing Spell:</label>
+                <label for="first-name">Moniker: <input id="first-name" type="text"></label>
+                <label for="last-name">House: <input id="last-name" type="text"></label>
+                <label for="email">Messenger Raven Destination: <input id="email" type="email"></label>
+                <label for="new-password">Unsealing Spell: <input id="new-password" type="password"></label>
+                <!--for = links elements for ease of access e.g. id-->
             </fieldset>
             <fieldset></fieldset>
             <fieldset></fieldset>
+            <input type="submit" value="Submit">
         </form>
         <!--method = how to send form date to action URL; sent via GET(URL parameters) or POST requests(body)-->
     </body>
