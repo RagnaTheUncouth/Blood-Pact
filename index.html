@@ -13,15 +13,27 @@
         <p>Provide your lore to receive glorious wonders</p>
         <form action="https://register-demo.freecodecamp.org" method="post">
             <fieldset>
-                <label for="first-name">Moniker: <input id="first-name" type="text"></label>
-                <label for="last-name">House: <input id="last-name" type="text"></label>
-                <label for="email">Messenger Raven Destination: <input id="email" type="email"></label>
-                <label for="new-password">Unsealing Spell: <input id="new-password" type="password"></label>
+                <label for="first-name">Moniker: <input id="first-name" type="text" required></label>
+                <label for="last-name">House: <input id="last-name" type="text" required></label>
+                <label for="email">Messenger Raven Destination: <input id="email" type="email" required></label>
+                <label for="new-password">Unsealing Spell: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
                 <!--for = links elements for ease of access e.g. id-->
+                <!--minlength="#"; self explanatory-->
             </fieldset>
-            <fieldset></fieldset>
-            <fieldset></fieldset>
+            <fieldset>
+                <legend>Declare Intention</legend>
+                <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked> Self Serving</label>
+                <label for="business-account"><input id="business-account" type="radio" name="account-type"> For The Greater Good</label>
+                <!--radio = selection/choice
+                name="account-type" = only chooses 1
+                checked; preselected choice-->
+            </fieldset>
+            <fieldset>
+                <label for="">House Sigil: <input type="file"></label>
+            </fieldset>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required>I pledge my fealty to the <a href="https://www.freecodecamp.org/news/terms-of-service/">old gods and the new.</a></label>
             <input type="submit" value="Submit">
+            <!--a; makes anything into a link-->
         </form>
         <!--method = how to send form date to action URL; sent via GET(URL parameters) or POST requests(body)-->
     </body>
