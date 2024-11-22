@@ -29,7 +29,22 @@
                 checked; preselected choice-->
             </fieldset>
             <fieldset>
-                <label for="">House Sigil: <input type="file"></label>
+                <label for="profile-picture">House Sigil: <input type="file" id="profile-picture"></label>
+                <label for="age">Solar Rotations on Earth: <input type="number" min="13" max="120" id="age"></label>
+                <label for="referrer">Advocacy Source: 
+                    <select name="" id="referrer">
+                        <option value="">(selection)</option>
+                        <option value="1">The Hand</option>
+                        <option value="2">Master of Coin</option>
+                        <option value="3">Grand Meister</option>
+                        <option value="4">Common Folk</option>
+                        <!--value needed; without it text content will be submitted to server-->
+                    </select>
+                    <!--select = dropdown menu-->
+                 </label>
+                 <label for="bio">Your Lore: 
+                    <textarea name="" id="bio"></textarea>
+                 </label>
             </fieldset>
             <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required>I pledge my fealty to the <a href="https://www.freecodecamp.org/news/terms-of-service/">old gods and the new.</a></label>
             <input type="submit" value="Submit">
