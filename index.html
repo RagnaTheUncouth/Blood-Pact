@@ -13,10 +13,10 @@
         <p>Provide your lore to receive glorious wonders</p>
         <form action="https://register-demo.freecodecamp.org" method="post">
             <fieldset>
-                <label for="first-name">Moniker: <input id="first-name" type="text" required></label>
-                <label for="last-name">House: <input id="last-name" type="text" required></label>
-                <label for="email">Messenger Raven Destination: <input id="email" type="email" required></label>
-                <label for="new-password">Unsealing Spell: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
+                <label for="first-name">Moniker: <input id="first-name" type="text" required name="first-name"></label>
+                <label for="last-name">House: <input id="last-name" type="text" required name="last-name"></label>
+                <label for="email">Messenger Raven Destination: <input id="email" type="email" required name="email"></label>
+                <label for="new-password">Unsealing Spell: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}" name="new-password"></label>
                 <!--for = links elements for ease of access e.g. id-->
                 <!--minlength="#"; self explanatory-->
             </fieldset>
@@ -24,15 +24,14 @@
                 <legend>Declare Intention</legend>
                 <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked> Self Serving</label>
                 <label for="business-account"><input id="business-account" type="radio" name="account-type"> For The Greater Good</label>
-                <!--radio = selection/choice
-                name="account-type" = only chooses 1
-                checked; preselected choice-->
+                <!--radio = selection/choice-->
+                <!--checked; preselected choice-->
             </fieldset>
             <fieldset>
-                <label for="profile-picture">House Sigil: <input type="file" id="profile-picture"></label>
-                <label for="age">Solar Rotations on Earth: <input type="number" min="13" max="120" id="age"></label>
+                <label for="profile-picture">House Sigil: <input type="file" id="profile-picture" name="profile-picture"></label>
+                <label for="age">Solar Rotations on Earth: <input type="number" min="13" max="120" id="age" name="id"></label>
                 <label for="referrer">Advocacy Source: 
-                    <select name="" id="referrer">
+                    <select name="" id="referrer" name="referrer">
                         <option value="">(selection)</option>
                         <option value="1">The Hand</option>
                         <option value="2">Master of Coin</option>
@@ -43,12 +42,13 @@
                     <!--select = dropdown menu-->
                  </label>
                  <label for="bio">Your Lore: 
-                    <textarea name="" id="bio"></textarea>
+                    <textarea name="" id="bio" rows="3" cols="30" placeholder="What is your ancestral origin?" name="bio"></textarea>
                  </label>
             </fieldset>
-            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required>I pledge my fealty to the <a href="https://www.freecodecamp.org/news/terms-of-service/">old gods and the new.</a></label>
+            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-of-service">I pledge my fealty to the <a href="https://www.freecodecamp.org/news/terms-of-service/">old gods and the new.</a></label>
             <input type="submit" value="Submit">
             <!--a; makes anything into a link-->
+            <!--name; identifies element in the form submission-->
         </form>
         <!--method = how to send form date to action URL; sent via GET(URL parameters) or POST requests(body)-->
     </body>
