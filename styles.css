@@ -14,9 +14,33 @@ h1, p{
     margin: 1em auto;
     text-align: center;
 }
+form{
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    /*vw = viewport width;
+    1% of width of the viewport; relative to viewport width*/
+}
+fieldset{
+    border: 0;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f
+}
+fieldset:last-of-type{
+    /*last-of-type = selects last element of specific type*/
+    border-bottom: none;
+}
 label {
     display: block;
     margin: 0.5rem 0;
     /*rem = root em; font size relative to HTML element*/
     /*2 value margin shorthand = top/bottom left/right*/
+}
+input, textarea, select{
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+.inline{
+    width: unset;
 }
