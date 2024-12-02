@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8"> 
         <title>Blood Pact</title>
-        <!--<meta> used to provide info about web page to search engines-->
-        <!-- Unicode Transformation Format-8; without this, users would need to manually insert characters using HTML entities-->
+        <!-- <meta> used to provide info about web page to search engines -->
+        <!-- Unicode Transformation Format-8; without this, users would need to manually insert characters using HTML entities -->
         
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -17,15 +17,15 @@
                 <label for="last-name">House: <input id="last-name" type="text" required name="last-name"></label>
                 <label for="email">Messenger Raven Destination: <input id="email" type="email" required name="email"></label>
                 <label for="new-password">Unsealing Spell: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}" name="new-password"></label>
-                <!--for = links elements for ease of access e.g. id-->
-                <!--minlength="#"; self explanatory-->
+                <!-- for = links elements for ease of access e.g. id -->
+                <!-- minlength="#"; self explanatory -->
             </fieldset>
             <fieldset>
                 <legend>Declare Intention</legend>
                 <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked class="inline"> Self Serving</label>
                 <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline"> For The Greater Good</label>
-                <!--radio = selection/choice-->
-                <!--checked; preselected choice-->
+                <!-- radio = selection/choice -->
+                <!-- checked; preselected choice -->
             </fieldset>
             <fieldset>
                 <label for="profile-picture">House Sigil: <input type="file" id="profile-picture" name="profile-picture"></label>
@@ -37,9 +37,9 @@
                         <option value="2">Master of Coin</option>
                         <option value="3">Grand Meister</option>
                         <option value="4">Common Folk</option>
-                        <!--value needed; without it text content will be submitted to server-->
+                        <!-- value needed; without it text content will be submitted to server -->
                     </select>
-                    <!--select = dropdown menu-->
+                    <!-- select = dropdown menu -->
                  </label>
                  <label for="bio">Your Lore: 
                     <textarea name="" id="bio" rows="3" cols="30" placeholder="What is your ancestral origin?" name="bio"></textarea>
@@ -47,9 +47,9 @@
             </fieldset>
             <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-of-service">I pledge my fealty to the <a href="https://www.freecodecamp.org/news/terms-of-service/">old gods and the new.</a></label>
             <input type="submit" value="Submit">
-            <!--a; makes anything into a link-->
-            <!--name; identifies element in the form submission-->
+            <!-- a; makes anything into a link -->
+            <!-- name; identifies element in the form submission -->
         </form>
-        <!--method = how to send form date to action URL; sent via GET(URL parameters) or POST requests(body)-->
+        <!-- method = how to send form date to action URL; sent via GET(URL parameters) or POST requests(body) -->
     </body>
 </html>
