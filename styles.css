@@ -19,6 +19,7 @@ form{
     max-width: 500px;
     min-width: 300px;
     width: 60vw;
+    padding-bottom: 2em;
     /* vw = viewport width;
     1% of width of the viewport; relative to viewport width */
 }
@@ -70,3 +71,9 @@ form{
     display: block;
     width: 60%;
   }
+input[type="file"]{
+    padding: 1px 2px;
+}
+a{
+    color: #dfdfe2;
+}
